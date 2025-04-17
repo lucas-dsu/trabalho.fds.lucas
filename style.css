@@ -1,0 +1,155 @@
+body {
+    background-color: #adc4dc;
+    color: #333;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #2a9dcd;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    text-shadow: 0 0 10px #0ff;
+}
+
+h1::first-letter {
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 20px;
+    color: #555;
+}
+
+.primeiraimg {
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+}
+
+img:not(.primeiraimg) {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:not(.primeiraimg):hover {
+    transform: scale(1.02);
+}
+
+.legendaimg {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 1px;
+    text-align: left;
+    display: block;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    border: 3px solid #5685ec;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-align: center;
+    color: rgb(60, 74, 97);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(22, 90, 180);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: #2735ef;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.botaodemsg {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 10px auto;
+    padding: 12px 24px;
+    background-color: #2a9dcd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botaodemsg:hover {
+    background-color: #238bb3;
+}
+
+#mensagem {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+    line-height: 1.6;
+    text-align: center;
+    white-space: pre-line;
+}
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 18px;
+    background-color: #2a9dcd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#btnTopo:hover {
+    background-color: #238bb3;
+}
+

@@ -1,0 +1,67 @@
+<!--
+    Trabalho: Página de Apresentação Pessoal
+    Autor: Lucas Ferreira
+    Número de Aluno:
+    Curso: Análise e Desenvolvimento de Sistemas - Uninter
+    Modulo: Fundamentos de Desenvolvimento de Software
+    Data de Criação: 17/04/2025
+    Descrição: Página com informações pessoais, hobbies e países que desejo conhecer.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Ferreira - Página Pessoal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lucas Mateus de Souza Ferreira</h1>
+
+    <p>Meu nome é Lucas, tenho 29 anos e sou natural de Esteio, mas atualmente moro em Sapucaia do Sul. Sempre tive interesse por tecnologia e, após anos em uma carreira diferente, decidi estudar a área de desenvolvimento. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS) na Uninter, o que está me proporcionando uma base sólida para alcançar meus objetivos profissionais. Além de programar, sou músico e gosto muito de tocar teclado e outros instrumentos na igreja. Gosto também de aquarismo e de estudar ecossistemas aquáticos — atividades que me ajudam a manter a mente criativa e focada. Estou determinado a aprender cada vez mais e me tornar um profissional qualificado na área de tecnologia.</p>
+
+    <p>Meus hobbies são:</p>
+    <ul>
+        <li>Tocar instrumentos musicais</li>
+        <li>Montar aquários</li>
+        <li>Estudar sobre Programação</li>
+    </ul>
+
+    <figure>
+        <img src="imghb.jpeg" class="primeiraimg" alt="Gravação de clipe">
+        <figcaption class="legendaimg">
+            Momento especial durante uma gravação de clipe.
+        </figcaption>  
+    </figure>
+
+    <h2>Países que sonho conhecer</h2>
+
+    <table>
+        <tr>
+            <td>Estados Unidos</td>
+            <td><img src="euaimg.jpg" alt="Estados Unidos"></td>
+        </tr>
+        <tr>
+            <td>Argentina</td>
+            <td><img src="bariloche.jpg" alt="Argentina - Bariloche"></td>
+        </tr>
+        <tr>
+            <td>Itália</td>
+            <td><img src="italy.jpg" alt="Itália"></td>
+        </tr>
+    </table>
+    <br>
+
+    <a href="https://www.w3schools.com" target="_blank">Meu site favorito</a>
+
+    <button class="botaodemsg" id="botaoMsg">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+
+    <button id="btnTopo" onclick="voltarAoTopo()">⬆ Voltar ao topo</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
